@@ -1,0 +1,8 @@
+android-sdk/
+jdk17/
+*.apkm
+*.apk
+build/
+.gradle/
+gradle/wrapper/gradle-wrapper.jar
+local.properties
