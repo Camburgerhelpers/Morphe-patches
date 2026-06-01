@@ -4,10 +4,10 @@ patches {
     about {
         name = "AliExpress Patches"
         description = "Morphe patches for AliExpress"
-        source = "git@github.com:user/aliexpress-patches.git"
-        author = "user"
+        source = "git@github.com:Quantro100/Morphe-patches.git"
+        author = "Quantro100"
         contact = "na"
-        website = "https://github.com/user/aliexpress-patches"
+        website = "https://github.com/Quantro100/Morphe-patches"
         license = "GNU General Public License v3.0"
     }
 }
