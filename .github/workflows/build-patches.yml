@@ -29,13 +29,15 @@ jobs:
           java-version: "21"
           cache: gradle
 
-      - name: Allow Gradle wrapper to run
-        run: chmod +x gradlew
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "9.3.1"
 
       - name: Build patches and patch list
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew :patches:generatePatchesList --stacktrace
+        run: gradle :patches:generatePatchesList --stacktrace
 
       - name: Show generated files
         if: always()
